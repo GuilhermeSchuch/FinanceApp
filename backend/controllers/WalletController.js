@@ -13,7 +13,15 @@ const walletController = {
             return res.status(201).json({ response, msg: "Wallet posted" });
 
         } catch (error) {
-            console.log(`WalletControllerError: ${error}`);
+            console.log(`CreateWalletControllerError: ${error}`);
+        }
+    },
+    find: async(req, res) => {
+        try {
+            const response = await WalletModel.find();
+            return res.status(201).json({ response });
+        } catch (error) {
+            console.log(`FindWalletControllerError: ${error}`);
         }
     }
 }
