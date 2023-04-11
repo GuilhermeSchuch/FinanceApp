@@ -45,38 +45,20 @@ const userController = {
 
     login: async(req, res, headers) => {
         try {
-            console.log();
             // Compare password
             const user = await UserModel.findOne({ email: req.body.email });
             const checkPassword = await bcrypt.compare(req.body.password, user.password);
             
             const secret = process.env.SECRET;
-            const token = jwt.sign({ id: user._id }, secret);
+            const userId = user._id.toString();
+            const token = jwt.sign({ id: userId }, secret);
 
             res.cookie("auth", token);
+            res.cookie("user", userId);
             res.status(200).json({ msg: "You are logged in", token })
 
         } catch (error) {
             console.log(`LoginError: ${error}`);
-        }
-    },
-
-    verifyJWT: async(token) => {
-        console.log(token);
-        const secret = process.env.SECRET;
-
-        if(!token){
-            return { msg: "You are not logged in!" }
-        }
-        else{
-            jwt.verify(token, secret, function(err, decoded){
-                if(err){
-                    return { msg: "Invalid token!" }
-                }
-                if(decoded){
-                    
-                }
-            })
         }
     },
 
