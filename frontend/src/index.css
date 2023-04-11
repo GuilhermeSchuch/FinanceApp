@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Colors */
+.mainCardTitleBlue{
+  color: #4CC1FF;
+}
+
+.mainCardStroke{
+  border: 3px solid #0A192C;
+}
+
+.underscore{
+  font-size: 13px;
+  color:  #4CC1FF;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: #0a1f44;
+  background-image: url('../public/img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  overflow: auto;
+}
+
+body{
+  /* height: 100vh; */
+}
