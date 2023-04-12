@@ -4,12 +4,12 @@ import "./Auth.css";
 // Components
 import MainCard from "../../components/MainCard/MainCard";
 
-const Login = () => {
+const Register = () => {
   return (
     <div>
-        <MainCard title={"LOGIN"}/>
+      <MainCard title={"REGISTRAR-SE"}/>
     </div>
   )
 }
 
-export default Login
+export default Register

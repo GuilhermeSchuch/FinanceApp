@@ -10,10 +10,21 @@
 }
 
 .underscore{
+  margin-top: 10px;
+}
+
+.underscore a{
   font-size: 13px;
   color:  #4CC1FF;
   text-decoration: underline;
   margin-top: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.underscore a:hover{
+  font-weight: 700;
+  color:  #0a1f44;
 }
 
 *{

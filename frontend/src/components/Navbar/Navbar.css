@@ -1,0 +1,22 @@
+.navbarHeader{
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.navbarHeader nav{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 3vw;
+}
+
+.navbarHouse img, .navbarUser img{
+    width: 40px;
+}
+
+@media (max-width: 800px){
+    .navbarHeader nav{
+        margin: 2vh 5vw;
+    }
+}
