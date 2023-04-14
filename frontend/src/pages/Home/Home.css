@@ -1,0 +1,33 @@
+.homeContainer{
+    border: 1px solid red;
+    align-self: flex-start;
+    margin-top: 120px;
+}
+
+.searchContainer{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#search{
+    background-color: rgba(117, 201, 228, 0.46);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    /* height: 3vh; */
+    height: 30px;
+    margin-top: 15px;
+    color: #FFF;
+    padding: 10px;
+}
+
+#search::placeholder{
+    color: #FFF;
+}
+
+.searchTitle{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 100;
+}

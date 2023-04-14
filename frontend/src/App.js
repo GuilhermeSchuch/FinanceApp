@@ -10,6 +10,7 @@ import Navbar from './components/Navbar/Navbar';
 // Pages
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
+import Home from './pages/Home/Home';
 
 function App() {
   return (
@@ -18,6 +19,12 @@ function App() {
         <Navbar />
         <div className="container">
           <Routes>
+          <Route
+              path='/'
+              element={<Home />}
+            >
+            </Route>
+
             <Route
               path='/login'
               element={<Login />}

@@ -1,0 +1,39 @@
+.walletContainer{
+    /* border: 1px solid brown; */
+    margin-top: 100px;
+}
+
+.walletName{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 1vh;
+}
+
+.walletGains{
+    border: 3px solid rgba(10, 25, 44, 1);
+    background-color: rgba(76, 193, 255, 0.2);
+    border-radius: 5px;
+    padding: 21px 10px;
+}
+
+.gain{
+    /* border: 1px solid blue; */
+    font-size: 16px;
+}
+
+.gain:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.gain:nth-child(1){
+    color: rgba(76, 193, 255, 1);
+}
+
+.gain:nth-child(2){
+    color: rgba(253, 71, 85, 1);
+}
+
+.gain:nth-child(3){
+    color: rgba(144, 188, 2, 1);
+}
