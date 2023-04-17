@@ -7,7 +7,8 @@ const itemSchema = new Schema(
         name: String,
         gainOrExpense: Number,
         value: Number,
-        wallet: String
+        wallet: String,
+        month: String
     },
     {timestamps: true}
 );

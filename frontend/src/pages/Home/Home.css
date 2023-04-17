@@ -5,9 +5,12 @@
 }
 
 .searchContainer{
-    border: 1px solid black;
+    border: 1px solid green;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #search{
@@ -20,6 +23,7 @@
     margin-top: 15px;
     color: #FFF;
     padding: 10px;
+    width: 213px;
 }
 
 #search::placeholder{
@@ -30,4 +34,12 @@
     color: #FFF;
     font-size: 32px;
     font-weight: 100;
+}
+
+.walletsContainer{
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }

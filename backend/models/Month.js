@@ -6,6 +6,7 @@ const monthSchema = new Schema(
     {
         name: String,
         total: Number,
+        items: Array
     },
     {timestamps: true}
 );
