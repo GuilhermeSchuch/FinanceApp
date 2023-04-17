@@ -6,7 +6,8 @@ const walletSchema = new Schema(
     {
         name: String,
         totalGains: Number,
-        totalExpenses: Number
+        totalExpenses: Number,
+        items: Array
     },
     {timestamps: true}
 );

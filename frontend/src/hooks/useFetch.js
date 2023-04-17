@@ -4,26 +4,32 @@ import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
     const [data, setData] = useState();
-    const [loading, setLoading] = useState(false);
 
     
+    // useEffect(() => {
+    //   const dataFetch = async () => {
+    //     const data = await (
+    //       await fetch(
+    //         `http://localhost:3000/api${url}`
+    //       )
+    //     ).json();
+  
+    //     setData(data);
+    //   };
+  
+    //   dataFetch();
+    // }, []);
+
     useEffect(() => {
-      const dataFetch = async () => {
-        setLoading(true);
-        const data = await (
-          await fetch(
-            `http://localhost:3000/api${url}`
-          )
-        ).json();
-  
-        setData(data);
-      };
-  
-      dataFetch();
-      setLoading(false);
+      async function fetchData() {
+        const res = await fetch(`http://localhost:3000/api${url}`);
+        const jsonData = await res.json();
+        setData(jsonData.response);
+      }
+      fetchData();
     }, []);
 
-    return { data, loading };
+    return data;
 }
 
 export default useFetch

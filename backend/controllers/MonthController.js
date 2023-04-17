@@ -8,7 +8,8 @@ const monthController = {
         try {
             const month = {
                 name: req.body.name,
-                total: 0
+                total: 0,
+                items: []
             };
 
             const response = await MonthModel.create(month);
